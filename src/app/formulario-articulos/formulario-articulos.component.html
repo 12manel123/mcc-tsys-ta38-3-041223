@@ -1,0 +1,14 @@
+<div>
+    <h2>Formulario de Artículos</h2>
+    <label for="codigo">Código:</label>
+    <input type="number" id="codigo" [(ngModel)]="codigo" />
+    <br />
+    <label for="descripcion">Descripción:</label>
+    <input type="text" id="descripcion" [(ngModel)]="descripcion" />
+    <br />
+    <label for="precio">Precio:</label>
+    <input type="number" id="precio" [(ngModel)]="precio" />
+    <br />
+    <button (click)="agregarArticulo()">Agregar Artículo</button>
+    <button (click)="modificarArticulo()">Modificar Artículo</button>
+</div>

@@ -1,0 +1,10 @@
+<div>
+    <h2>Lista de Artículos</h2>
+    <ul>
+      <li *ngFor="let articulo of getArticulos()" (click)="seleccionarEnLista(articulo)">
+        {{ articulo.codigo }} - {{ articulo.descripcion }} - {{ articulo.precio }}
+        <button (click)="borrarArticulo(articulo.codigo)">Borrar</button>
+        <button (click)="seleccionarEnLista(articulo)">Seleccionar</button>
+    </li>
+    </ul>
+</div>
